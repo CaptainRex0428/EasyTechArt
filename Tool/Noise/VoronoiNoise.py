@@ -30,7 +30,7 @@ num_seeds = 64  # 控制细胞数量
 voronoi_noise = generate_voronoi_noise(size, size, num_points=num_seeds)
 
 # 保存图像
-plt.imsave("voronoi_noise.png", voronoi_noise, cmap='gray')
+plt.imsave("T_VoronoiNoise.png", voronoi_noise, cmap='gray')
 
 # （可选）显示图像
 plt.imshow(voronoi_noise, cmap='gray')

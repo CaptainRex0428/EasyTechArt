@@ -51,5 +51,5 @@ if __name__ == "__main__":
         blur_radius=0.6,
         seed=42
     )
-    save_star_noise_rgb("sparse_noise_rgb.png", star_noise_rgb)
+    save_star_noise_rgb("T_SparseNoise.png", star_noise_rgb)
     print("已保存 star_noise_rgb.png")

@@ -35,4 +35,4 @@ size = 512
 cloud_rgb = generate_color_cloud(size_power_of_two=size,noisescale = 100)
 
 # 精确保存为 size x size 的 PNG 图像
-mpimg.imsave("cloud_noise.png", cloud_rgb)
+mpimg.imsave("T_CloudNoise.png", cloud_rgb)

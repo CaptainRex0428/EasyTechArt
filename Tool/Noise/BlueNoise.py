@@ -33,4 +33,4 @@ size = (512, 512)
 blue_noise_image = generate_blue_noise(size)
 
 # 使用 mpimg.imsave 精确保存为 size x size 的 PNG 图像
-mpimg.imsave("blue_noise_image.png", blue_noise_image, cmap='gray')
+mpimg.imsave("T_BlueNoise.png", blue_noise_image, cmap='gray')
