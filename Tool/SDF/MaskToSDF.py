@@ -196,14 +196,15 @@ def generate_multichannel_sdf(
 # 使用示例
 if __name__ == "__main__":
     # 基础用法
-    mask_path = r'D:\Export\T_Unlock_Mask.png'
+    mask_path = r'D:\Export\Unlock\T_Unlock_Full_Mask.png'
+    
     output_path = 'T_SDF_Highres.png'
     
     # 生成高精度SDF
     sdf = generate_sdf_high_precision(
         mask_path,
         output_path,
-        decay_distance=200.0,
+        decay_distance=300.0,
         output_size=(0, 0),  # 可以指定输出尺寸
         edge_mode='smooth',      # 使用平滑边缘模式
         normalize_range=(0.0, 1.0),
@@ -211,7 +212,7 @@ if __name__ == "__main__":
         antialiasing=True       # 启用抗锯齿
     )
     
-    # 生成多通道SDF（用于UE中的高级效果）
+    # 生成多通道SDF
     generate_multichannel_sdf(
         mask_path,
         'T_SDF_Multichannel.png',

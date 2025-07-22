@@ -50,6 +50,9 @@ def generate_id_strip_image(width=128, output_path=None, max_n=8, mode='RGB'):
         for x in range(idx * pixels_per_id, (idx + 1) * pixels_per_id):
             img.putpixel((x, 0), color)
 
+        # 打印每个块的精确RGB值
+        print(f"Block {idx + 1} (x={idx * pixels_per_id} to {(idx + 1) * pixels_per_id - 1}): {color}")
+
     # 自动生成输出文件名
     if output_path is None:
         output_path = f"T_Gradient_Strip_{real_width}px_{mode}.png"
